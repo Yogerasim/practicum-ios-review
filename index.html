@@ -1,261 +1,243 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Отзыв о курсе iOS-разработчик — Яндекс Практикум</title>
-  <meta name="description" content="Мой отзыв о курсе iOS-разработчик от Яндекс Практикума" />
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #60a5fa;
-      --accent-2: #38bdf8;
-      --border: #1f2937;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    * {
-      box-sizing: border-box;
-    }
+<title>Отзыв о курсе iOS-разработчик — Яндекс Практикум</title>
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
-      background:
-        radial-gradient(circle at top, #1e293b 0%, #0f172a 40%, #020617 100%);
-      color: var(--text);
-      line-height: 1.65;
-    }
+<style>
 
-    .wrap {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 48px 20px 80px;
-    }
+:root{
+--bg:#0f172a;
+--card:#111827;
+--text:#e5e7eb;
+--muted:#94a3b8;
+--accent:#60a5fa;
+--border:#1f2937;
+}
 
-    .card {
-      background: rgba(17, 24, 39, 0.88);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 32px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(10px);
-    }
+*{
+box-sizing:border-box;
+}
 
-    .badge {
-      display: inline-block;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(96, 165, 250, 0.12);
-      color: var(--accent);
-      border: 1px solid rgba(96, 165, 250, 0.25);
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,sans-serif;
+background:radial-gradient(circle at top,#1e293b 0%,#0f172a 40%,#020617 100%);
+color:var(--text);
+line-height:1.65;
+}
 
-    .hero {
-      margin-bottom: 28px;
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--border);
-    }
+.wrap{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+}
 
-    .name {
-      margin: 0 0 8px;
-      font-size: clamp(34px, 6vw, 56px);
-      line-height: 1.05;
-      color: #f8fafc;
-    }
+.card{
+background:rgba(17,24,39,.9);
+border:1px solid var(--border);
+border-radius:24px;
+padding:36px;
+box-shadow:0 20px 50px rgba(0,0,0,.35);
+}
 
-    .role {
-      margin: 0 0 10px;
-      font-size: 22px;
-      color: var(--accent-2);
-      font-weight: 600;
-    }
+h1{
+margin:0 0 12px;
+font-size:42px;
+}
 
-    .stack {
-      margin: 0 0 20px;
-      color: var(--muted);
-      font-size: 16px;
-      letter-spacing: 0.2px;
-    }
+.subtitle{
+color:var(--muted);
+font-size:18px;
+margin-bottom:28px;
+}
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+h2{
+margin-top:30px;
+margin-bottom:12px;
+font-size:24px;
+}
 
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      border-radius: 14px;
-      border: 1px solid rgba(96, 165, 250, 0.25);
-      background: rgba(96, 165, 250, 0.10);
-      color: #dbeafe;
-      text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
-    }
+p{
+font-size:17px;
+margin-bottom:16px;
+}
 
-    .button:hover {
-      transform: translateY(-1px);
-      background: rgba(96, 165, 250, 0.16);
-      border-color: rgba(96, 165, 250, 0.4);
-      text-decoration: none;
-    }
+.quote{
+padding:16px;
+border-left:4px solid var(--accent);
+background:rgba(148,163,184,.08);
+border-radius:12px;
+margin:22px 0;
+}
 
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(30px, 5vw, 48px);
-      line-height: 1.1;
-    }
+.divider{
+height:1px;
+background:var(--border);
+margin:40px 0;
+}
 
-    .subtitle {
-      color: var(--muted);
-      font-size: 18px;
-      margin-bottom: 28px;
-    }
+.author{
+text-align:center;
+}
 
-    h2 {
-      margin-top: 32px;
-      margin-bottom: 12px;
-      font-size: 24px;
-      color: #f8fafc;
-    }
+.name{
+font-size:28px;
+font-weight:700;
+margin-bottom:4px;
+}
 
-    p {
-      margin: 0 0 16px;
-      font-size: 17px;
-    }
+.role{
+color:var(--accent);
+font-weight:600;
+margin-bottom:8px;
+}
 
-    .quote {
-      padding: 18px 20px;
-      border-left: 4px solid var(--accent);
-      background: rgba(148, 163, 184, 0.08);
-      border-radius: 14px;
-      color: #dbeafe;
-      margin: 24px 0;
-    }
+.stack{
+color:var(--muted);
+margin-bottom:20px;
+}
 
-    .footer {
-      margin-top: 36px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
-    }
+.buttons{
+display:flex;
+gap:12px;
+justify-content:center;
+flex-wrap:wrap;
+}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
+.btn{
+padding:12px 18px;
+border-radius:12px;
+background:rgba(96,165,250,.15);
+border:1px solid rgba(96,165,250,.3);
+color:#dbeafe;
+text-decoration:none;
+font-weight:600;
+transition:.15s;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+.btn:hover{
+background:rgba(96,165,250,.25);
+transform:translateY(-1px);
+}
 
-    @media (max-width: 640px) {
-      .card {
-        padding: 24px;
-      }
+.footer{
+margin-top:40px;
+font-size:14px;
+color:var(--muted);
+text-align:center;
+}
 
-      .actions {
-        flex-direction: column;
-      }
-
-      .button {
-        width: 100%;
-      }
-    }
-  </style>
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="hero">
-        <div class="badge">iOS Developer</div>
-        <h1 class="name">Philip Gerasimov</h1>
-        <div class="role">iOS Developer</div>
-        <div class="stack">Swift • SwiftUI • Concurrency • Metal</div>
 
-        <div class="actions">
-          <a class="button" href="https://github.com/Yogerasim" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="button" href="https://t.me/philipp_gerasim" target="_blank" rel="noopener noreferrer">App Projects</a>
-          <a class="button" href="https://t.me/philip_gerasim" target="_blank" rel="noopener noreferrer">Contact</a>
-        </div>
-      </div>
+<div class="wrap">
 
-      <div class="badge">Отзыв о курсе</div>
-      <h1>Яндекс Практикум — iOS-разработчик</h1>
-      <div class="subtitle">
-        Мой личный отзыв после прохождения курса
-      </div>
+<div class="card">
 
-      <p>
-        Я прошёл курс «iOS-разработчик» в Яндекс Практикуме, и за это время обучение действительно помогло мне выстроить более цельную картину мобильной разработки на Swift.
-      </p>
+<h1>Яндекс Практикум — iOS-разработчик</h1>
 
-      <p>
-        Самое важное для меня — я стал намного лучше понимать, как устроено реальное приложение: как разделять проект на слои, как работать с сетью, моделями данных, состоянием интерфейса, навигацией, Git и командной разработкой. За время курса я не просто читал теорию, а регулярно писал код, исправлял ошибки, проходил ревью и постепенно начал воспринимать разработку не как набор отдельных тем, а как единую систему.
-      </p>
+<div class="subtitle">
+Мой отзыв после прохождения курса
+</div>
 
-      <h2>Что особенно дало обучение</h2>
+<p>
+Я прошёл курс «iOS-разработчик» в Яндекс Практикуме, и за это время обучение помогло мне выстроить более цельную картину мобильной разработки на Swift.
+</p>
 
-      <p>
-        Одной из самых полезных частей курса для меня стала практика. Когда ты проходишь темы вроде многопоточности, архитектуры, работы с API, Git, экранов и состояний интерфейса, это начинает по-настоящему закрепляться только тогда, когда ты применяешь это в проекте.
-      </p>
+<p>
+Самое важное — я стал намного лучше понимать, как устроено реальное приложение: как разделять проект на слои, работать с сетью, моделями данных, состоянием интерфейса, навигацией и Git.
+</p>
 
-      <p>
-        Отдельно хочу отметить, что курс помог мне лучше понять Swift Concurrency и работу с многопоточностью. До обучения такие темы могут казаться абстрактными и сложными, но в процессе практики они начинают становиться живыми: ты уже понимаешь, зачем нужны асинхронные вызовы, как не блокировать интерфейс, как правильно обновлять UI и почему потокобезопасность так важна в реальном приложении.
-      </p>
+<p>
+За время курса я не просто читал теорию — я постоянно писал код, исправлял ошибки, проходил ревью и постепенно начал воспринимать разработку как систему.
+</p>
 
-      <div class="quote">
-        Для меня курс стал не просто обучением «как написать приложение», а шагом к более инженерному мышлению в iOS-разработке.
-      </div>
+<h2>Что особенно дало обучение</h2>
 
-      <h2>Что изменилось после курса</h2>
+<p>
+Самой полезной частью стала практика. Когда ты проходишь темы вроде архитектуры, многопоточности и работы с API, они начинают по-настоящему закрепляться только тогда, когда применяешь их в проекте.
+</p>
 
-      <p>
-        После прохождения курса я чувствую, что могу увереннее реализовывать свои собственные приложения. Я лучше понимаю, как организовать структуру проекта, как разбивать задачи на этапы и как доводить функциональность от идеи до рабочего результата.
-      </p>
+<p>
+Особенно полезно было глубже разобраться в Swift Concurrency и работе с многопоточностью. Такие темы сначала кажутся сложными, но через практику начинаешь понимать, как не блокировать UI и как правильно строить асинхронный код.
+</p>
 
-      <p>
-        Также обучение дало мне хорошую базу для поиска работы. Теперь я лучше ориентируюсь в том, что спрашивают на собеседованиях, какие темы действительно важны для junior iOS-разработчика и над чем мне нужно продолжать работать дальше.
-      </p>
+<div class="quote">
+Для меня курс стал не просто обучением разработке, а шагом к более инженерному мышлению в iOS.
+</div>
 
-      <p>
-        При этом я понимаю, что для получения оффера на желаемую позицию мне ещё важно закреплять знания: продолжать писать свои проекты, повторять ключевые темы и тренироваться проходить технические интервью. Но теперь у меня уже есть фундамент, и благодаря курсу я смогу двигаться к этой цели заметно быстрее.
-      </p>
+<h2>Что изменилось после курса</h2>
 
-      <h2>Идея для улучшения курса</h2>
+<p>
+После обучения я чувствую, что могу увереннее реализовывать собственные приложения — от идеи до готового продукта.
+</p>
 
-      <p>
-        На финальном командном проекте особенно чувствуется, насколько полезной могла бы быть небольшая серия материалов про многомодульную архитектуру или хотя бы про более явное разделение проекта на feature-модули. В командной работе это очень помогает: у каждого разработчика появляется своя зона ответственности, меньше конфликтов в коде и проще масштабировать проект.
-      </p>
+<p>
+Теперь мне намного понятнее, как структурировать проект, как разделять ответственность между слоями и как организовывать архитектуру приложения.
+</p>
 
-      <p>
-        Мне кажется, даже небольшой дополнительный блок про организацию крупных iOS-проектов, feature-модули и связи между ними сделал бы курс ещё сильнее и ещё ближе к реальной коммерческой разработке.
-      </p>
+<p>
+Также курс дал хорошую базу для поиска работы. Я лучше понимаю, какие знания требуются на собеседованиях и над чем нужно продолжать работать.
+</p>
 
-      <h2>Итог</h2>
+<h2>Идея для улучшения курса</h2>
 
-      <p>
-        В целом я благодарен курсу за структуру, практику и за тот объём реального опыта, который я получил в процессе обучения. Это был полезный и местами непростой путь, но именно за счёт этого он и дал результат.
-      </p>
+<p>
+На финальном командном проекте было заметно, что приложению отлично подошла бы многомодульная архитектура.
+</p>
 
-      <p>
-        Спасибо команде Практикума за обучение, ревью, поддержку и за возможность пройти путь от изучения основ до полноценного командного проекта.
-      </p>
+<p>
+Было бы здорово добавить небольшую серию уроков про feature-модули и организацию крупных проектов. Это помогло бы студентам ещё лучше понять, как строятся реальные production-проекты.
+</p>
 
-      <div class="footer">
-        Автор отзыва — Филипп Герасимов
-      </div>
-    </div>
-  </div>
+<h2>Итог</h2>
+
+<p>
+В целом курс оставил очень хорошее впечатление. Он дал мне системное понимание iOS-разработки и позволил пройти путь от изучения основ до полноценного командного проекта.
+</p>
+
+<div class="divider"></div>
+
+<div class="author">
+
+<div class="name">Philip Gerasimov</div>
+
+<div class="role">iOS Developer</div>
+
+<div class="stack">
+Swift • SwiftUI • Concurrency • Metal
+</div>
+
+<div class="buttons">
+
+<a class="btn" href="https://github.com/Yogerasim" target="_blank">
+GitHub
+</a>
+
+<a class="btn" href="https://t.me/philipp_gerasim" target="_blank">
+App Projects
+</a>
+
+<a class="btn" href="https://t.me/philip_gerasim" target="_blank">
+Contact
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+Автор отзыва — Филипп Герасимов
+</div>
+
+</div>
+
+</div>
+
 </body>
 </html>
