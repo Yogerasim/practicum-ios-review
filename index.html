@@ -12,6 +12,7 @@
       --text: #e5e7eb;
       --muted: #94a3b8;
       --accent: #60a5fa;
+      --accent-2: #38bdf8;
       --border: #1f2937;
     }
 
@@ -52,6 +53,60 @@
       border: 1px solid rgba(96, 165, 250, 0.25);
       font-size: 14px;
       margin-bottom: 20px;
+    }
+
+    .hero {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .name {
+      margin: 0 0 8px;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+      color: #f8fafc;
+    }
+
+    .role {
+      margin: 0 0 10px;
+      font-size: 22px;
+      color: var(--accent-2);
+      font-weight: 600;
+    }
+
+    .stack {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 16px;
+      letter-spacing: 0.2px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(96, 165, 250, 0.25);
+      background: rgba(96, 165, 250, 0.10);
+      color: #dbeafe;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      background: rgba(96, 165, 250, 0.16);
+      border-color: rgba(96, 165, 250, 0.4);
+      text-decoration: none;
     }
 
     h1 {
@@ -103,11 +158,38 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 24px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="card">
+      <div class="hero">
+        <div class="badge">iOS Developer</div>
+        <h1 class="name">Philip Gerasimov</h1>
+        <div class="role">iOS Developer</div>
+        <div class="stack">Swift • SwiftUI • Concurrency • Metal</div>
+
+        <div class="actions">
+          <a class="button" href="https://github.com/Yogerasim" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="button" href="https://t.me/philipp_gerasim" target="_blank" rel="noopener noreferrer">App Projects</a>
+          <a class="button" href="https://t.me/philip_gerasim" target="_blank" rel="noopener noreferrer">Contact</a>
+        </div>
+      </div>
+
       <div class="badge">Отзыв о курсе</div>
       <h1>Яндекс Практикум — iOS-разработчик</h1>
       <div class="subtitle">
